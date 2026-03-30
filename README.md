@@ -3,6 +3,7 @@ This is an unknown application written in Java
 
 ---- For Submission (you must fill in the information below) ----
 ### Use Case Diagram
+<img width="738" height="751" alt="Untitled Diagram drawio (3)" src="https://github.com/user-attachments/assets/4af06d20-ce1b-47b5-b4c6-42802f3c4586" />
 
 ### Flowchart of the main workflow
 
