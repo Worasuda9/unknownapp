@@ -14,17 +14,17 @@ flowchart TD
     C --> |2| E["Admin Login"]
     C --> |3| F["Exit + saveAndExit()"]
 
-    D --> D1{"Student ID == \"new\"?"}
+    D --> D1{"Student ID == 'new'?"}
     D1 --> |Yes| D2["createStudentProfile()"]
     D1 --> |No| D3["getStudent(id)"]
-    D3 --> |Null| D4["Show \"ID not found\" -> back to LOGIN MENU"]
+    D3 --> |Null| D4["Show 'ID not found' -> back to LOGIN MENU"]
     D3 --> |Found| D5["studentMenu(student)"]
     D2 --> |Created| D5
     D2 --> |Canceled| C
 
     E --> E1["Enter password"]
     E1 -->|correct| E2["adminMenu()"]
-    E1 -->|wrong| E3["Show \"Incorrect password\" -> back to LOGIN MENU"]
+    E1 -->|wrong| E3["Show 'Incorrect password' -> back to LOGIN MENU"]
 
     D5 --> C
     E2 --> C
