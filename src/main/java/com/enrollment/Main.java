@@ -92,13 +92,17 @@ public class Main {
 
         String choice = scanner.nextLine().trim();
         switch (choice) {
-            case "1" -> studentLogin();
-            case "2" -> adminLogin();
-            case "3" -> {
+            case "1":
+                studentLogin();
+                break;
+            case "2":
+                adminLogin();
+                break;
+            case "3":
                 saveAndExit();
                 return true;
-            }
-            default -> System.out.println("  [!] Invalid option. Please enter 1, 2, or 3.");
+            default:
+                System.out.println("  [!] Invalid option. Please enter 1, 2, or 3.");
         }
         return false;
     }
@@ -163,17 +167,30 @@ public class Main {
 
             String choice = scanner.nextLine().trim();
             switch (choice) {
-                case "1" -> viewCourseCatalog();
-                case "2" -> registerForCourse(student);
-                case "3" -> dropCourse(student);
-                case "4" -> viewSchedule(student);
-                case "5" -> billingSummary(student);
-                case "6" -> editProfile(student);
-                case "7" -> {
+                case "1":
+                    viewCourseCatalog();
+                    break;
+                case "2":
+                    registerForCourse(student);
+                    break;
+                case "3":
+                    dropCourse(student);
+                    break;
+                case "4":
+                    viewSchedule(student);
+                    break;
+                case "5":
+                    billingSummary(student);
+                    break;
+                case "6":
+                    editProfile(student);
+                    break;
+                case "7":
                     saveData();
                     logout = true;
-                }
-                default -> System.out.println("  [!] Invalid option.");
+                    break;
+                default:
+                    System.out.println("  [!] Invalid option.");
             }
         }
     }
@@ -357,20 +374,39 @@ public class Main {
 
             String choice = scanner.nextLine().trim();
             switch (choice) {
-                case "1"  -> viewCourseCatalog();
-                case "2"  -> adminViewRoster();
-                case "3"  -> adminViewStudents();
-                case "4"  -> adminAddStudent();
-                case "5"  -> adminEditStudent();
-                case "6"  -> adminAddCourse();
-                case "7"  -> adminEditCourse();
-                case "8"  -> adminViewSchedule();
-                case "9"  -> adminBillingSummary();
-                case "10" -> {
+                case "1":
+                    viewCourseCatalog();
+                    break;
+                case "2":
+                    adminViewRoster();
+                    break;
+                case "3":
+                    adminViewStudents();
+                    break;
+                case "4":
+                    adminAddStudent();
+                    break;
+                case "5":
+                    adminEditStudent();
+                    break;
+                case "6":
+                    adminAddCourse();
+                    break;
+                case "7":
+                    adminEditCourse();
+                    break;
+                case "8":
+                    adminViewSchedule();
+                    break;
+                case "9":
+                    adminBillingSummary();
+                    break;
+                case "10":
                     saveData();
                     logout = true;
-                }
-                default -> System.out.println("  [!] Invalid option.");
+                    break;
+                default:
+                    System.out.println("  [!] Invalid option.");
             }
         }
     }

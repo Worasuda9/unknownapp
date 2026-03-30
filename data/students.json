@@ -1,9 +1,11 @@
 [
   {
     "id": "STU001",
-    "name": "Alice Johnson",
+    "name": "Baby Johnson",
     "major": "Computer Science",
-    "enrolledCourses": [],
+    "enrolledCourses": [
+      "CS201"
+    ],
     "completedCourses": [
       "CS101"
     ]
@@ -32,6 +34,13 @@
     "enrolledCourses": [
       "CS101"
     ],
+    "completedCourses": []
+  },
+  {
+    "id": "1",
+    "name": "Worasuda",
+    "major": "SE",
+    "enrolledCourses": [],
     "completedCourses": []
   }
 ]

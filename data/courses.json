@@ -27,7 +27,9 @@
     "prerequisites": [
       "CS101"
     ],
-    "enrolledStudents": []
+    "enrolledStudents": [
+      "STU001"
+    ]
   },
   {
     "code": "CS301",
